@@ -10,7 +10,7 @@ if (typeof userInput === 'string') {
 
 userName = anyUserInput;
 
-function genErr(msg: string, code: number) {
+function genErr(msg: string, code: number): never {
 	throw { message: msg, errorCode: code };
 }
 
